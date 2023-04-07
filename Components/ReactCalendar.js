@@ -9,6 +9,7 @@ const [selected, setSelected] = useState(null);
 const [date, setDate] = useState();
 
 
+
 const today = new Date();
 const weekDayNames = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
 const DAYS_IN_WEEK = 7;
@@ -29,6 +30,7 @@ const monthData = [
   }; 
 
     return<>
+   
 <input type="month" onChange={e=>setMonth(e.target.value)}></input>
 <table className={s.table}>
     <thead>
