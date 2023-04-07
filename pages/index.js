@@ -1,8 +1,9 @@
-import Calendar from '../components/Calendar';
+import ReactCalendar from '../components/ReactCalendar';
 
-function App (){
-    return<>
-    <Calendar />
-   </>
+
+function App() {
+   return <>
+    <ReactCalendar />
+    </>
 }
 export default App;
