@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Calendar from '../components/Calendar';
-import { LocaleContext } from '../components/LocaleContext';
+import Calendar from '../components/input-date/Calendar';
+import { LocaleContext } from '../components/input-date/LocaleContext';
 
 export default function ReactCalendar() {
     const [month, setMonth] = useState(new Date);
