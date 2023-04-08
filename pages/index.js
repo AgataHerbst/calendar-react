@@ -2,13 +2,9 @@ import { useState } from 'react';
 import Calendar from '../components/Calendar';
 import { LocaleContext } from '../components/LocaleContext';
 
-
-
 export default function ReactCalendar() {
     const [month, setMonth] = useState(new Date);
     const [locale, setLocale] = useState('ru-RU');
-   
-    
 
     return <>
         <h1>CALENDAR</h1>
@@ -23,9 +19,9 @@ export default function ReactCalendar() {
 
         <LocaleContext.Provider value={locale}>
             <main>
-            <section>
+                <section>
                     <h2>Calendar</h2>
-                   
+
                     <input type="month"
                         value={month.getFullYear() + '-' + (1 + month.getMonth()).toString().padStart(2, '0')}
                         onChange={evt => setMonth(new Date(evt.target.value.slice(0, 4), evt.target.value.slice(5, 7) - 1))}
