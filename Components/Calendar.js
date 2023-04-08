@@ -47,5 +47,5 @@ function Month({ start, max, selected }) { //start - начало недели, 
     for (let weekStart = 1 - start; weekStart <= +max; weekStart += 7) {
         result.push(<Week key={weekStart} start={weekStart} {...{ max, selected }} />);
     }
-    return <>{result}</>;
+    return <>{result}</>
 }
